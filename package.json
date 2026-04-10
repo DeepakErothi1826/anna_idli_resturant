@@ -17,8 +17,8 @@
     "@react-three/fiber": "^9.5.0",
     "framer-motion": "^12.38.0",
     "lucide-react": "^1.7.0",
-    "react": "^19.2.4",
-    "react-dom": "^19.2.4",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "react-router-dom": "^7.13.2",
     "three": "^0.183.2"
   },
@@ -28,6 +28,14 @@
     "autoprefixer": "^10.4.27",
     "postcss": "^8.5.8",
     "tailwindcss": "^4.2.2",
-    "vite": "^8.0.3"
-  }
+    "vite": "^5.4.21"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DeepakErothi1826/anna_idli_resturant.git"
+  },
+  "bugs": {
+    "url": "https://github.com/DeepakErothi1826/anna_idli_resturant/issues"
+  },
+  "homepage": "https://github.com/DeepakErothi1826/anna_idli_resturant#readme"
 }
