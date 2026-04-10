@@ -1,0 +1,147 @@
+﻿
+> anna_idli_1@1.0.0 build
+> vite build
+
+[36mvite v8.0.3 [32mbuilding client environment for production...[36m[39m
+[2K
+transforming...Γ£ô 2708 modules transformed.
+rendering chunks...
+node.exe : [31mΓ£ù[39m 
+Build failed in 8.65s
+At line:1 char:1
++ & "C:\Program 
+Files\nodejs/node.exe" 
+"C:\Program 
+Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo        
+      : NotSpecified: (  
+  [31mΓ£ù[39m Build fa   
+ iled in 8.65s:String)    
+ [], RemoteException
+    + FullyQualifiedError 
+   Id : NativeCommandErr  
+  or
+ 
+[31merror during build:
+[31mBuild failed with 1 
+error:
+
+[31m[MISSING_EXPORT] 
+Error:[0m "createRenderer
+MotionComponent" is not 
+exported by "node_modules/
+framer-motion/dist/es/inde
+x.mjs".
+   [38;5;246mΓò¡[0m[38;
+5;246mΓöÇ[0m[38;5;246m[
+[0m node_modules/framer-mo
+tion-3d/dist/es/render/mot
+ion.mjs:2:42 
+[38;5;246m][0m
+   [38;5;246mΓöé[0m
+ [38;5;246m2 Γöé[0m [38
+;5;249mi[0m[38;5;249mm[
+0m[38;5;249mp[0m[38;5;2
+49mo[0m[38;5;249mr[0m[
+38;5;249mt[0m[38;5;249m 
+[0m[38;5;249m{[0m[38;5
+;249m [0m[38;5;249mm[0m
+[38;5;249ma[0m[38;5;249
+mk[0m[38;5;249me[0m[38
+;5;249mU[0m[38;5;249ms[
+0m[38;5;249me[0m[38;5;2
+49mV[0m[38;5;249mi[0m[
+38;5;249ms[0m[38;5;249mu
+[0m[38;5;249ma[0m[38;5
+;249ml[0m[38;5;249mS[0m
+[38;5;249mt[0m[38;5;249
+ma[0m[38;5;249mt[0m[38
+;5;249me[0m[38;5;249m,[
+0m[38;5;249m [0m[38;5;2
+49ma[0m[38;5;249mn[0m[
+38;5;249mi[0m[38;5;249mm
+[0m[38;5;249ma[0m[38;5
+;249mt[0m[38;5;249mi[0m
+[38;5;249mo[0m[38;5;249
+mn[0m[38;5;249ms[0m[38
+;5;249m,[0m[38;5;249m [
+0mcreateRendererMotionComp
+onent[38;5;249m [0m[38;
+5;249m}[0m[38;5;249m [0
+m[38;5;249mf[0m[38;5;24
+9mr[0m[38;5;249mo[0m[3
+8;5;249mm[0m[38;5;249m 
+[0m[38;5;249m'[0m[38;5;
+249mf[0m[38;5;249mr[0m
+[38;5;249ma[0m[38;5;249m
+m[0m[38;5;249me[0m[38;
+5;249mr[0m[38;5;249m-[0
+m[38;5;249mm[0m[38;5;24
+9mo[0m[38;5;249mt[0m[3
+8;5;249mi[0m[38;5;249mo
+[0m[38;5;249mn[0m[38;5;
+249m'[0m[38;5;249m;[0m
+ [38;5;240m  Γöé[0m     
+                          
+           ΓöÇΓöÇΓöÇΓöÇΓöÇ
+ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö
+ÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓ
+öÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ  
+ [38;5;240m  Γöé[0m     
+                          
+                         Γ
+ò░ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ 
+Missing export
+[38;5;246mΓöÇΓöÇΓöÇΓò»[0
+m
+[31m
+    at aggregateBindingErr
+orsIntoJsError (file:///C:
+/Users/leeza%20dunna/OneDr
+ive/Desktop/anna_idli_1/no
+de_modules/rolldown/dist/s
+hared/error-BLhcSyeg.mjs:4
+8:18)
+    at 
+unwrapBindingResult (file:
+///C:/Users/leeza%20dunna/
+OneDrive/Desktop/anna_idli
+_1/node_modules/rolldown/d
+ist/shared/error-BLhcSyeg.
+mjs:18:128)
+    at #build (file:///C:/
+Users/leeza%20dunna/OneDri
+ve/Desktop/anna_idli_1/nod
+e_modules/rolldown/dist/sh
+ared/rolldown-build-CPrIX9
+V6.mjs:3313:34)
+    at async 
+buildEnvironment (file:///
+C:/Users/leeza%20dunna/One
+Drive/Desktop/anna_idli_1/
+node_modules/vite/dist/nod
+e/chunks/node.js:32849:64)
+    at async Object.build 
+(file:///C:/Users/leeza%20
+dunna/OneDrive/Desktop/ann
+a_idli_1/node_modules/vite
+/dist/node/chunks/node.js:
+33271:19)
+    at async 
+Object.buildApp (file:///C
+:/Users/leeza%20dunna/OneD
+rive/Desktop/anna_idli_1/n
+ode_modules/vite/dist/node
+/chunks/node.js:33268:153)
+    at async 
+CAC.<anonymous> (file:///C
+:/Users/leeza%20dunna/OneD
+rive/Desktop/anna_idli_1/n
+ode_modules/vite/dist/node
+/cli.js:778:3) {
+  errors: [Getter/Setter]
+}[39m
