@@ -24,14 +24,14 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         {/* Logo */}
         <Link to="/" className="flex items-center gap-2 group">
-          <div className="w-10 h-10 rounded-full bg-anna-primary flex items-center justify-center">
-            <span className="text-anna-bg font-display font-bold text-xl">A</span>
+          <div className="w-8 sm:w-10 h-8 sm:h-10 rounded-full bg-anna-primary flex items-center justify-center">
+            <span className="text-anna-bg font-display font-bold text-lg sm:text-xl">A</span>
           </div>
           <div className="flex flex-col">
-            <span className="text-xl font-display font-bold text-anna-surface tracking-tight leading-none">
+            <span className="text-lg sm:text-xl font-display font-bold text-anna-surface tracking-tight leading-none">
               Anna <span className="text-anna-primary">Idli</span>
             </span>
-            <span className="text-[10px] text-anna-muted uppercase tracking-widest">Since 2010</span>
+            <span className="text-[8px] sm:text-[10px] text-anna-muted uppercase tracking-widest">Since 2010</span>
           </div>
         </Link>
 

@@ -295,9 +295,9 @@ const Menu = () => {
   };
 
   return (
-    <section className="px-6 max-w-7xl mx-auto z-10 relative pointer-events-auto">
+    <section className="px-4 sm:px-6 max-w-7xl mx-auto z-10 relative pointer-events-auto">
       {/* Filter Buttons */}
-      <div className="flex flex-wrap justify-center gap-3 mb-16">
+      <div className="flex flex-wrap justify-center gap-2 sm:gap-3 mb-10 sm:mb-16">
         {categories.map((cat, index) => {
           const Icon = categoryIcons[cat];
           return (
@@ -307,13 +307,13 @@ const Menu = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.1 }}
-              className={`group relative flex items-center gap-2 px-6 py-3 rounded-full font-body font-medium transition-all duration-300 uppercase tracking-wider text-sm border ${
+              className={`group relative flex items-center gap-1.5 sm:gap-2 px-4 sm:px-6 py-2 sm:py-3 rounded-full font-body font-medium transition-all duration-300 uppercase tracking-wider text-xs sm:text-sm border ${
                 filter === cat 
                   ? 'bg-anna-primary text-anna-bg border-anna-primary' 
                   : 'border-white/20 text-anna-surface hover:border-anna-primary hover:text-anna-primary'
               }`}
             >
-              <Icon size={16} className={filter === cat ? 'text-anna-bg' : 'opacity-60 group-hover:opacity-100'} />
+              <Icon size={14} sm:size={16} className={filter === cat ? 'text-anna-bg' : 'opacity-60 group-hover:opacity-100'} />
               {cat}
             </motion.button>
           );
@@ -322,7 +322,7 @@ const Menu = () => {
 
       {/* Menu Grid */}
       <motion.div 
-        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5 }}
@@ -333,10 +333,10 @@ const Menu = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4, delay: index * 0.03 }}
             key={item.id}
-            className="glass-card-hover rounded-3xl overflow-hidden group cursor-pointer"
+            className="glass-card-hover rounded-2xl sm:rounded-3xl overflow-hidden group cursor-pointer"
           >
             {/* Image Container */}
-            <div className="relative h-56 overflow-hidden">
+            <div className="relative h-44 sm:h-48 md:h-56 overflow-hidden">
               <motion.img
                 whileHover={{ scale: 1.1 }}
                 transition={{ duration: 0.6, ease: "easeOut" }}
@@ -349,31 +349,31 @@ const Menu = () => {
                 
                 {/* Badge */}
                 {item.badge && (
-                  <div className="absolute top-4 right-4 bg-anna-secondary px-3 py-1 rounded-full">
-                    <span className="text-xs font-bold text-white uppercase tracking-wider">{item.badge}</span>
+                  <div className="absolute top-3 sm:top-4 right-3 sm:right-4 bg-anna-secondary px-2 sm:px-3 py-1 rounded-full">
+                    <span className="text-[10px] sm:text-xs font-bold text-white uppercase tracking-wider">{item.badge}</span>
                   </div>
                 )}
 
                 {/* Category Icon */}
-                <div className="absolute bottom-4 left-4 p-2 glass rounded-full">
-                  <span className="text-xs font-medium text-anna-primary uppercase">{item.category}</span>
+                <div className="absolute bottom-3 sm:bottom-4 left-3 sm:left-4 p-1.5 sm:p-2 glass rounded-full">
+                  <span className="text-[10px] sm:text-xs font-medium text-anna-primary uppercase">{item.category}</span>
                 </div>
               </div>
 
               {/* Content */}
-              <div className="p-6">
-                <div className="flex justify-between items-start mb-3">
-                  <h3 className="text-xl font-display font-bold text-anna-surface group-hover:text-anna-primary transition-colors duration-300">
+              <div className="p-4 sm:p-6">
+                <div className="flex justify-between items-start mb-2 sm:mb-3">
+                  <h3 className="text-base sm:text-xl font-display font-bold text-anna-surface group-hover:text-anna-primary transition-colors duration-300">
                     {item.name}
                   </h3>
-                  <span className="text-anna-primary font-display font-bold text-lg">{item.price}</span>
+                  <span className="text-anna-primary font-display font-bold text-sm sm:text-lg">{item.price}</span>
                 </div>
-                <p className="text-anna-muted font-body text-sm leading-relaxed">{item.desc}</p>
+                <p className="text-anna-muted font-body text-xs sm:text-sm leading-relaxed">{item.desc}</p>
                 
                 {/* Hover Indicator */}
-                <div className="mt-4 flex items-center gap-2 text-anna-primary opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <span className="text-xs font-medium uppercase tracking-wider">Order Now</span>
-                  <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <div className="mt-3 sm:mt-4 flex items-center gap-2 text-anna-primary opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <span className="text-[10px] sm:text-xs font-medium uppercase tracking-wider">Order Now</span>
+                  <svg className="w-3 sm:w-4 h-3 sm:h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                   </svg>
                 </div>

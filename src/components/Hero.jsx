@@ -36,7 +36,7 @@ const Hero = () => {
                 </span>
               </div>
 
-              <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-display font-bold leading-[1.05]">
+              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-display font-bold leading-[1.05]">
                 The Best <br />
                 <span className="text-gradient italic">Thatte Idli</span><br />
                 in Raipur
@@ -70,19 +70,19 @@ const Hero = () => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.8, delay: 0.8 }}
-              className="flex gap-12 pt-4"
+              className="flex gap-6 sm:gap-12 pt-4"
             >
               <div>
-                <span className="text-3xl font-display font-bold text-anna-primary">15+</span>
-                <p className="text-anna-muted text-sm font-body">Years of Legacy</p>
+                <span className="text-2xl sm:text-3xl font-display font-bold text-anna-primary">15+</span>
+                <p className="text-anna-muted text-xs sm:text-sm font-body">Years of Legacy</p>
               </div>
               <div>
-                <span className="text-3xl font-display font-bold text-anna-primary">50K+</span>
-                <p className="text-anna-muted text-sm font-body">Happy Customers</p>
+                <span className="text-2xl sm:text-3xl font-display font-bold text-anna-primary">50K+</span>
+                <p className="text-anna-muted text-xs sm:text-sm font-body">Happy Customers</p>
               </div>
               <div>
-                <span className="text-3xl font-display font-bold text-anna-primary">4.8</span>
-                <p className="text-anna-muted text-sm font-body">Rating</p>
+                <span className="text-2xl sm:text-3xl font-display font-bold text-anna-primary">4.8</span>
+                <p className="text-anna-muted text-xs sm:text-sm font-body">Rating</p>
               </div>
             </motion.div>
           </div>
@@ -91,13 +91,13 @@ const Hero = () => {
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1, delay: 0.4 }}
-            className="relative hidden lg:block"
+            className="relative mt-12 lg:mt-0 w-full max-w-md mx-auto lg:max-w-none"
           >
             <div className="relative">
-              <div className="absolute -top-6 -left-6 w-32 h-32 border-l-2 border-t-2 border-anna-primary/30" />
-              <div className="absolute -bottom-6 -right-6 w-32 h-32 border-r-2 border-b-2 border-anna-secondary/30" />
+              <div className="absolute -top-4 sm:-top-6 -left-4 sm:-left-6 w-20 sm:w-24 h-20 sm:h-24 md:w-32 md:h-32 border-l-2 border-t-2 border-anna-primary/30" />
+              <div className="absolute -bottom-4 sm:-bottom-6 -right-4 sm:-right-6 w-20 sm:w-24 h-20 sm:h-24 md:w-32 md:h-32 border-r-2 border-b-2 border-anna-secondary/30" />
               
-              <div className="relative rounded-3xl overflow-hidden glow-primary">
+              <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden glow-primary">
                 <img
                   src="https://images.unsplash.com/photo-1630383249896-424e482df921?q=80&w=1200&auto=format&fit=crop"
                   alt="Delicious Thatte Idli"
@@ -109,20 +109,20 @@ const Hero = () => {
               <motion.div
                 animate={{ y: [0, -8, 0] }}
                 transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
-                className="absolute -bottom-4 -left-4 glass-card px-5 py-3 rounded-2xl"
+                className="absolute -bottom-3 sm:-bottom-4 -left-3 sm:-left-4 glass-card px-4 sm:px-5 py-2 sm:py-3 rounded-xl sm:rounded-2xl"
               >
-                <span className="text-anna-primary font-display font-bold text-lg">?60</span>
-                <span className="text-anna-muted text-sm ml-2">starting</span>
+                <span className="text-anna-primary font-display font-bold text-base sm:text-lg">₹60</span>
+                <span className="text-anna-muted text-xs sm:text-sm ml-1 sm:ml-2">starting</span>
               </motion.div>
 
               <motion.div
                 animate={{ y: [0, 8, 0] }}
                 transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-                className="absolute -top-4 -right-4 glass-card px-4 py-2 rounded-full"
+                className="absolute -top-3 sm:-top-4 -right-3 sm:-right-4 glass-card px-3 sm:px-4 py-1.5 sm:py-2 rounded-full"
               >
-                <div className="flex items-center gap-2">
-                  <Star size={14} className="text-anna-primary fill-anna-primary" />
-                  <span className="text-anna-primary font-display font-bold text-sm">4.8</span>
+                <div className="flex items-center gap-1.5 sm:gap-2">
+                  <Star size={12} sm:size={14} className="text-anna-primary fill-anna-primary" />
+                  <span className="text-anna-primary font-display font-bold text-xs sm:text-sm">4.8</span>
                 </div>
               </motion.div>
             </div>

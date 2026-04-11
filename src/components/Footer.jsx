@@ -9,22 +9,22 @@ const Footer = () => {
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-96 h-96 bg-anna-primary/5 rounded-full blur-[150px] pointer-events-none" />
       
       <div className="max-w-7xl mx-auto relative z-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-12 mb-12 sm:mb-16">
           {/* Brand Column */}
           <div className="lg:col-span-2">
-            <Link to="/" className="flex items-center gap-3 mb-6">
-              <div className="w-12 h-12 rounded-full bg-anna-primary flex items-center justify-center">
-                <span className="text-anna-bg font-display font-bold text-2xl">A</span>
+            <Link to="/" className="flex items-center gap-2 sm:gap-3 mb-4 sm:mb-6">
+              <div className="w-10 sm:w-12 h-10 sm:h-12 rounded-full bg-anna-primary flex items-center justify-center">
+                <span className="text-anna-bg font-display font-bold text-xl sm:text-2xl">A</span>
               </div>
               <div>
-                <span className="text-2xl font-display font-bold text-anna-surface">
+                <span className="text-xl sm:text-2xl font-display font-bold text-anna-surface">
                   Anna <span className="text-anna-primary">Idli</span>
                 </span>
                 <p className="text-xs text-anna-muted uppercase tracking-widest">Since 2010</p>
               </div>
             </Link>
             
-            <p className="text-anna-muted font-body leading-relaxed max-w-md mb-6">
+            <p className="text-anna-muted font-body leading-relaxed max-w-md mb-4 sm:mb-6 text-sm sm:text-base">
               Serving the authentic taste of South India in the heart of Raipur. 
               Our Thatte Idlis and Filter Coffee have become a beloved tradition for thousands.
             </p>
@@ -50,46 +50,46 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-lg font-display font-bold text-anna-surface mb-6">Quick Links</h3>
-            <ul className="space-y-3">
-              <li><Link to="/" className="text-anna-muted hover:text-anna-primary transition-colors font-body">Home</Link></li>
-              <li><Link to="/about" className="text-anna-muted hover:text-anna-primary transition-colors font-body">About Us</Link></li>
-              <li><Link to="/menu" className="text-anna-muted hover:text-anna-primary transition-colors font-body">Menu</Link></li>
-              <li><Link to="/contact" className="text-anna-muted hover:text-anna-primary transition-colors font-body">Contact</Link></li>
+            <h3 className="text-base sm:text-lg font-display font-bold text-anna-surface mb-4 sm:mb-6">Quick Links</h3>
+            <ul className="space-y-2 sm:space-y-3">
+              <li><Link to="/" className="text-anna-muted hover:text-anna-primary transition-colors font-body text-sm">Home</Link></li>
+              <li><Link to="/about" className="text-anna-muted hover:text-anna-primary transition-colors font-body text-sm">About Us</Link></li>
+              <li><Link to="/menu" className="text-anna-muted hover:text-anna-primary transition-colors font-body text-sm">Menu</Link></li>
+              <li><Link to="/contact" className="text-anna-muted hover:text-anna-primary transition-colors font-body text-sm">Contact</Link></li>
             </ul>
           </div>
 
           {/* Contact Info */}
           <div>
-            <h3 className="text-lg font-display font-bold text-anna-surface mb-6">Visit Us</h3>
-            <ul className="space-y-4">
-              <li className="flex items-start gap-3">
-                <MapPin size={18} className="text-anna-primary mt-1 shrink-0" />
-                <span className="text-anna-muted font-body text-sm">3/5, Lodhipara Chowk, Pandri Rd, Raipur, Chhattisgarh 492004</span>
+            <h3 className="text-base sm:text-lg font-display font-bold text-anna-surface mb-4 sm:mb-6">Visit Us</h3>
+            <ul className="space-y-3 sm:space-y-4">
+              <li className="flex items-start gap-2 sm:gap-3">
+                <MapPin size={16} sm:size={18} className="text-anna-primary mt-0.5 sm:mt-1 shrink-0" />
+                <span className="text-anna-muted font-body text-xs sm:text-sm">3/5, Lodhipara Chowk, Pandri Rd, Raipur, Chhattisgarh 492004</span>
               </li>
-              <li className="flex items-center gap-3">
-                <Phone size={18} className="text-anna-primary shrink-0" />
-                <span className="text-anna-muted font-body">+91 98765 43210</span>
+              <li className="flex items-center gap-2 sm:gap-3">
+                <Phone size={16} sm:size={18} className="text-anna-primary shrink-0" />
+                <span className="text-anna-muted font-body text-sm">+91 98765 43210</span>
               </li>
-              <li className="flex items-center gap-3">
-                <Clock size={18} className="text-anna-primary shrink-0" />
-                <span className="text-anna-muted font-body">7 AM - 11 PM</span>
+              <li className="flex items-center gap-2 sm:gap-3">
+                <Clock size={16} sm:size={18} className="text-anna-primary shrink-0" />
+                <span className="text-anna-muted font-body text-sm">7 AM - 11 PM</span>
               </li>
             </ul>
           </div>
         </div>
 
         {/* Bottom Bar */}
-        <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-anna-muted text-sm font-body">
+        <div className="pt-6 sm:pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-3 sm:gap-4">
+          <p className="text-anna-muted text-xs sm:text-sm font-body">
             © {new Date().getFullYear()} Anna Idli Raipur. All rights reserved.
           </p>
-          <div className="flex gap-6">
-            <span className="text-xs text-anna-muted/60 uppercase tracking-wider">Best Thatte Idli</span>
-            <span className="text-xs text-anna-muted/60">•</span>
-            <span className="text-xs text-anna-muted/60 uppercase tracking-wider">Ghee Podi Idli</span>
-            <span className="text-xs text-anna-muted/60">•</span>
-            <span className="text-xs text-anna-muted/60 uppercase tracking-wider">Filter Coffee</span>
+          <div className="flex flex-wrap justify-center gap-2 sm:gap-4 sm:gap-6">
+            <span className="text-[10px] sm:text-xs text-anna-muted/60 uppercase tracking-wider">Best Thatte Idli</span>
+            <span className="text-[10px] sm:text-xs text-anna-muted/60">•</span>
+            <span className="text-[10px] sm:text-xs text-anna-muted/60 uppercase tracking-wider">Ghee Podi Idli</span>
+            <span className="text-[10px] sm:text-xs text-anna-muted/60 hidden sm:inline">•</span>
+            <span className="text-[10px] sm:text-xs text-anna-muted/60 uppercase tracking-wider hidden sm:inline">Filter Coffee</span>
           </div>
         </div>
       </div>

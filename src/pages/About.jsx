@@ -53,16 +53,16 @@ const About = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="text-center mb-20"
+          className="text-center mb-12 sm:mb-20"
         >
-          <span className="text-anna-secondary uppercase tracking-[0.3em] text-sm font-body font-semibold mb-4 block">Our Story</span>
-          <h1 className="text-5xl md:text-7xl font-display font-bold text-shadow-glow">
+          <span className="text-anna-secondary uppercase tracking-[0.3em] text-xs sm:text-sm font-body font-semibold mb-4 block">Our Story</span>
+          <h1 className="text-4xl sm:text-5xl md:text-7xl font-display font-bold text-shadow-glow">
             A Taste of <span className="text-gradient italic">Tradition</span>
           </h1>
         </motion.div>
 
         {/* Main Content */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-24">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 sm:gap-16 items-center mb-16 sm:mb-24">
           {/* Image */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
@@ -71,7 +71,7 @@ const About = () => {
             viewport={{ once: true }}
             className="relative"
           >
-            <div className="relative h-[500px] rounded-3xl overflow-hidden">
+            <div className="relative h-[300px] sm:h-[400px] md:h-[500px] rounded-2xl sm:rounded-3xl overflow-hidden">
               <img 
                 src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=2070" 
                 alt="Anna Idli heritage"
@@ -86,22 +86,22 @@ const About = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.4 }}
               viewport={{ once: true }}
-              className="absolute -bottom-8 -right-8 glass-card p-6 rounded-2xl"
+              className="absolute -bottom-4 sm:-8 -right-4 sm:-right-8 glass-card p-4 sm:p-6 rounded-xl sm:rounded-2xl"
             >
-              <span className="text-4xl font-display font-bold text-anna-primary">15+</span>
-              <p className="text-anna-muted font-body text-sm">Years of Excellence</p>
+              <span className="text-2xl sm:text-4xl font-display font-bold text-anna-primary">15+</span>
+              <p className="text-anna-muted font-body text-xs sm:text-sm">Years of Excellence</p>
             </motion.div>
           </motion.div>
 
           {/* Text Content */}
           <motion.div 
-            className="space-y-8"
+            className="space-y-6 sm:space-y-8"
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-4xl md:text-5xl font-display font-bold text-anna-surface leading-tight">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-bold text-anna-surface leading-tight">
               The Authentic Taste of <span className="text-anna-primary">Raipur</span>
             </h2>
             
@@ -204,7 +204,7 @@ const About = () => {
 
           <div className="relative">
             {/* Timeline Line */}
-            <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-px bg-anna-primary/30 hidden md:block" />
+            <div className="absolute left-4 md:left-1/2 transform md:-translate-x-1/2 h-full w-px bg-anna-primary/30" />
 
             {journey.map((item, index) => (
               <motion.div
@@ -213,15 +213,15 @@ const About = () => {
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 viewport={{ once: true }}
-                className="relative flex flex-col md:flex-row items-center gap-8 mb-12 "
+                className="relative flex flex-col md:flex-row items-start gap-4 md:gap-8 mb-8 md:mb-12 pl-10 md:pl-0"
               >
-                  <div className="flex-1">
-                  <span className="inline-block px-4 py-1 bg-anna-primary/20 text-anna-primary font-display font-bold rounded-full mb-2">{item.year}</span>
-                  <h3 className="text-xl font-display font-bold text-anna-surface mb-2">{item.title}</h3>
-                  <p className="text-anna-muted">{item.desc}</p>
+                <div className="flex-1 md:text-left md:flex-1">
+                  <span className="inline-block px-3 sm:px-4 py-1 bg-anna-primary/20 text-anna-primary font-display font-bold rounded-full mb-2 text-sm">{item.year}</span>
+                  <h3 className="text-lg sm:text-xl font-display font-bold text-anna-surface mb-2">{item.title}</h3>
+                  <p className="text-anna-muted text-sm">{item.desc}</p>
                 </div>
-                <div className="w-4 h-4 rounded-full bg-anna-primary border-4 border-anna-bg z-10" />
-                <div className="flex-1" />
+                <div className="w-3 sm:w-4 h-3 sm:h-4 rounded-full bg-anna-primary border-2 sm:border-4 border-anna-bg z-10 absolute left-[14px] md:left-1/2 md:-translate-x-1/2" />
+                <div className="flex-1 md:flex-1" />
               </motion.div>
             ))}
           </div>
