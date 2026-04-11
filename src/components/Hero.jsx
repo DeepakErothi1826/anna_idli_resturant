@@ -12,8 +12,7 @@ export const pageTransition = {
 
 const Hero = () => {
   return (
-    <motion.section 
-      {...pageTransition}
+    <section 
       className="relative min-h-[90vh] flex items-center justify-center pt-20 px-6"
     >
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -130,7 +129,7 @@ const Hero = () => {
           </motion.div>
         </div>
       </div>
-    </motion.section>
+</section>
   );
 };
 

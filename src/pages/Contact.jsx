@@ -5,7 +5,7 @@ import { pageTransition } from '../components/Hero';
 
 const Contact = () => {
   return (
-    <motion.div {...pageTransition} className="pt-32 pb-24 px-6 min-h-screen relative">
+    <div className="pt-32 pb-24 px-6 min-h-screen relative">
       {/* Background Decorative */}
       <div className="absolute top-1/3 left-1/4 w-96 h-96 bg-anna-primary/5 rounded-full blur-[150px] pointer-events-none" />
       
@@ -237,7 +237,7 @@ const Contact = () => {
           </motion.div>
         </div>
       </div>
-    </motion.div>
+</div>
   );
 };
 

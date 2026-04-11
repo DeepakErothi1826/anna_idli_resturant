@@ -37,7 +37,7 @@ const About = () => {
   ];
 
   return (
-    <motion.div {...pageTransition} className="pt-32 pb-48 min-h-screen relative" ref={containerRef}>
+    <div className="pt-32 pb-48 min-h-screen relative" ref={containerRef}>
       
       {/* Heritage Background Text */}
       <div className="absolute top-0 w-full text-center pointer-events-none opacity-[0.03] overflow-hidden whitespace-nowrap">
@@ -285,7 +285,7 @@ const About = () => {
           </div>
         </motion.div>
       </div>
-    </motion.div>
+</div>
   );
 };
 

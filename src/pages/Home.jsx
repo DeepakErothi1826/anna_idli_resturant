@@ -44,7 +44,7 @@ const whyChooseUs = [
 
 const Home = () => {
   return (
-    <motion.div {...pageTransition} className="pt-10">
+    <div className="pt-10">
       <Hero />
       
       {/* Stats Section */}
@@ -204,7 +204,7 @@ const Home = () => {
 
       <Vibe />
       <Reviews />
-    </motion.div>
+    </div>
   );
 };
 

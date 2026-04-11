@@ -6,7 +6,7 @@ import { UtensilsCrossed } from 'lucide-react';
 
 const MenuPage = () => {
   return (
-    <motion.div {...pageTransition} className="pt-32 pb-24 min-h-screen">
+    <div className="pt-32 pb-24 min-h-screen">
       {/* Header Section */}
       <div className="text-center px-6 max-w-4xl mx-auto mb-20 relative z-10 pointer-events-auto">
         <motion.div
@@ -50,7 +50,7 @@ const MenuPage = () => {
       </div>
       
       <Menu />
-    </motion.div>
+    </div>
   );
 };
 
